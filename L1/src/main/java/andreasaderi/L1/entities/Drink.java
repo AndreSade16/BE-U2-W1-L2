@@ -1,15 +1,18 @@
 package andreasaderi.L1.entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@AllArgsConstructor
+
 @Data
-public class Drink {
+public class Drink extends MenuItem {
     private String name;
-    private int calories;
-    private double price;
     private double capacity;
+
+    public Drink(String name, int calories, double price, double capacity) {
+        super(price, calories);
+        this.name = name;
+        this.capacity = capacity;
+    }
 
     @Override
     public String toString() {

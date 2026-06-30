@@ -13,4 +13,12 @@ public class Tavolo {
     @Setter
     private boolean isOccupied;
 
+    @Override
+    public String toString() {
+        return "Tavolo{" +
+                "number=" + number +
+                ", maxCovers=" + maxCovers +
+                ", isOccupied=" + isOccupied +
+                '}';
+    }
 }

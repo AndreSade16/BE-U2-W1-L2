@@ -2,12 +2,14 @@ package andreasaderi.L1.entities;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
+import org.springframework.stereotype.Component;
 
 import java.util.List;
 import java.util.stream.Collectors;
 
 @Data
 @AllArgsConstructor
+@Component
 public class Menu {
     private List<Pizza> pizzaList;
     private List<Topping> toppingList;

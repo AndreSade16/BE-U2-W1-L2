@@ -1,15 +1,18 @@
 package andreasaderi.L1.entities;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.ToString;
 
-@AllArgsConstructor
+
 @Getter
-
-public class Topping {
+@ToString
+public class Topping extends MenuItem {
     private String name;
-    private int calories;
-    private double price;
+
+    public Topping(String name, int calories, double price) {
+        super(price, calories);
+        this.name = name;
+    }
 
 
     public String printTopping() {

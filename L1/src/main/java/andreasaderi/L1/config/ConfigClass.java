@@ -51,7 +51,7 @@ public class ConfigClass {
 
     @Bean
     public Drink getLemonade() {
-        return new Drink("Lemonade", 128, 1.29, 0.5);
+        return new Drink("Lemonade", 128, 1.29, 0.33);
     }
 
     @Bean
@@ -61,7 +61,7 @@ public class ConfigClass {
 
     @Bean
     public Drink getWine() {
-        return new Drink("Water", 0, 1.29, 0.5);
+        return new Drink("Wine", 350, 7.59, 0.75);
     }
 
     @Bean
@@ -83,5 +83,6 @@ public class ConfigClass {
     public Tavolo getTavolo3() {
         return new Tavolo(3, 2, true);
     }
+
 
 }
