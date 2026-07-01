@@ -26,13 +26,13 @@ public class Pizza extends MenuItem {
         this.ingredients.addAll(toppings);
     }
 
-    private static double calculatePrice(List<Topping> toppings) {
+    public static double calculatePrice(List<Topping> toppings) {
         return 4.99 + toppings.stream()
                 .mapToDouble(MenuItem::getPrice)
                 .sum();
     }
 
-    private static int calculateCalories(List<Topping> toppings) {
+    public static int calculateCalories(List<Topping> toppings) {
         return 1104 + toppings.stream()
                 .mapToInt(MenuItem::getCalories)
                 .sum();
